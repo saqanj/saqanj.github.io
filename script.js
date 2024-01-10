@@ -10,15 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
       mainPage.style.visibility = 'visible';
     }, 3000); // Adjust the time (in milliseconds) as per your preference
 
+    let rotationDegree = 0;
+
     function spinCat(){
       const catImage = document.querySelector('CAT.png');
 
-      catImage.style.transform = 'rotateY(120deg)';
-      catImage.style.transform = 'rotateY(120deg)';
-      catImage.style.transform = 'rotateY(120deg)';
+      rotationDegree += 120;
+
+      catImage.style.transform('rotateY(${rotationDegree}deg)');
     }
 
     const catImage = document.querySelector('CAT.png');
     catImage.addEventListener('click', spinCat);
-
   });
