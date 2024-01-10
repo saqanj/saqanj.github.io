@@ -1,0 +1,36 @@
+/* Style for the intro page */
+.intro-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: green; /* or any other color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Style for the main content page */
+  .main-page {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  }
+  
+  /* Style for the cat image */
+  img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  /* Style for the "CLICK THE CAT!" text */
+  .click-text {
+    font-family: 'Comic Sans MS', cursive; /* Change font to your preference */
+    font-size: 24px;
+    color: white;
+  }
+  
