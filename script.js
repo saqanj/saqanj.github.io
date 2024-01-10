@@ -9,5 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
       mainPage.style.opacity = '1';
       mainPage.style.visibility = 'visible';
     }, 3000); // Adjust the time (in milliseconds) as per your preference
+
+    function spinCat(){
+      const catImage = document.querySelector('CAT.png');
+
+      catImage.style.transform = 'rotateY(360deg)';
+    }
+
+    const catImage = document.querySelector('CAT.png');
+    catImage.addEventListener('click', spinCat);
+
   });
-  
