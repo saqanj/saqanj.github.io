@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function spinCat(){
       const catImage = document.querySelector('CAT.png');
 
-      catImage.style.transform = 'rotateY(360deg)';
+      catImage.style.transform = 'rotateY(120deg)';
+      catImage.style.transform = 'rotateY(120deg)';
+      catImage.style.transform = 'rotateY(120deg)';
     }
 
     const catImage = document.querySelector('CAT.png');
